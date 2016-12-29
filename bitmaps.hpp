@@ -16,6 +16,7 @@
 struct Bitmaps
 {
     ALLEGRO_BITMAP *tlo;
+    ALLEGRO_BITMAP *crosshair;
     ALLEGRO_FONT *font72b;
     ALLEGRO_FONT *font48b;
     ALLEGRO_FONT *font24b;

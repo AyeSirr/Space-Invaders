@@ -9,7 +9,7 @@
 #include <allegro5/allegro_ttf.h>
 #include <allegro5/allegro_audio.h>
 #include <allegro5/allegro_acodec.h>
-#define ScreenW 1000
+#define ScreenW 800
 #define ScreenH 600
 /**
  * Wspólrzedne pola rozpoczynajacego gre.
@@ -57,9 +57,9 @@ void StartMenu(struct Bitmaps bitmap, ALLEGRO_EVENT_QUEUE *eventQueue, ALLEGRO_D
         ALLEGRO_EVENT ev;
         al_wait_for_event(eventQueue, &ev);
         al_draw_bitmap(bitmap.tlo, 0, 0, 0);
-        al_draw_text(bitmap.font72b, al_map_rgb(150,0,0), ScreenW/2, ScreenH/4.5, ALLEGRO_ALIGN_CENTER, "NEW GAME");
-        al_draw_text(bitmap.font48b, al_map_rgb(150,0,0), ScreenW/2, ScreenH/2.5, ALLEGRO_ALIGN_CENTER, "RANKING");
-        al_draw_text(bitmap.font48b, al_map_rgb(150,0,0), ScreenW/2, ScreenH/1.4, ALLEGRO_ALIGN_CENTER, "END");
+        al_draw_text(bitmap.font72b, al_map_rgb(150,100,0), ScreenW/2, ScreenH/4.5, ALLEGRO_ALIGN_CENTER, "NEW GAME");
+        al_draw_text(bitmap.font48b, al_map_rgb(150,100,0), ScreenW/2, ScreenH/2.2, ALLEGRO_ALIGN_CENTER, "RANKING");
+        al_draw_text(bitmap.font48b, al_map_rgb(150,100,0), ScreenW/2, ScreenH/1.4, ALLEGRO_ALIGN_CENTER, "END");
 		if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
 		{
 			check = true;
@@ -80,7 +80,7 @@ void StartMenu(struct Bitmaps bitmap, ALLEGRO_EVENT_QUEUE *eventQueue, ALLEGRO_D
 
 
 		}
-
+        al_draw_bitmap(bitmap.crosshair, posx-20,posy-20,0);
             al_flip_display();
             al_clear_to_color(al_map_rgb(255,255,255));
     }

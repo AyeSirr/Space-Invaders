@@ -9,7 +9,7 @@
 	<allegro5/allegro_acodec.h>
 	<time.h>
 
-1483017053 source:c:\users\przemek\documents\github\space-invaders\main.cpp
+1483029195 source:c:\users\przemek\documents\github\space-invaders\main.cpp
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
 	<allegro5/allegro_primitives.h>
@@ -21,7 +21,7 @@
 	"menu.hpp"
 	"bitmaps.hpp"
 
-1483017174 source:c:\users\przemek\documents\github\space-invaders\menu.cpp
+1483029195 source:c:\users\przemek\documents\github\space-invaders\menu.cpp
 	"bitmaps.hpp"
 	"menu.hpp"
 	<stdio.h>
@@ -34,7 +34,7 @@
 	<allegro5/allegro_audio.h>
 	<allegro5/allegro_acodec.h>
 
-1483017174 source:c:\users\przemek\documents\github\space-invaders\bitmaps.cpp
+1483031645 source:c:\users\przemek\documents\github\space-invaders\bitmaps.cpp
 	"bitmaps.hpp"
 	<stdio.h>
 	<allegro5/allegro.h>
@@ -45,7 +45,7 @@
 	<allegro5/allegro_audio.h>
 	<allegro5/allegro_acodec.h>
 
-1483017174 c:\users\przemek\documents\github\space-invaders\bitmaps.hpp
+1483028517 c:\users\przemek\documents\github\space-invaders\bitmaps.hpp
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
 	<allegro5/allegro_primitives.h>

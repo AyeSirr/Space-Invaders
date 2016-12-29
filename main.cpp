@@ -8,7 +8,7 @@
 #include <time.h>
 #include "menu.hpp"
 #include "bitmaps.hpp"
-#define ScreenW 1000
+#define ScreenW 800
 #define ScreenH 600
 /**
  * \brief Funkcja uruchamiajaca program.
