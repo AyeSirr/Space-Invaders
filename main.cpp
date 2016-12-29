@@ -6,7 +6,9 @@
 #include <allegro5/allegro_audio.h>
 #include <allegro5/allegro_acodec.h>
 #include <time.h>
-#define ScreenW 800
+#include "menu.hpp"
+#include "bitmaps.hpp"
+#define ScreenW 1000
 #define ScreenH 600
 /**
  * \brief Funkcja uruchamiajaca program.
@@ -40,6 +42,7 @@ int main()
     al_hide_mouse_cursor(display);
     al_install_keyboard();
     al_install_mouse();
+    struct Bitmaps bitmap = CreateBitmaps(display);
     eventQueue = al_create_event_queue();
 
     al_register_event_source(eventQueue, al_get_keyboard_event_source());
@@ -47,8 +50,8 @@ int main()
     al_register_event_source(eventQueue, al_get_display_event_source(display));
     al_start_timer(timer);
     al_register_event_source(eventQueue, al_get_timer_event_source(timer));
-    al_rest(5);
 
+    StartMenu(bitmap, eventQueue, display, timer);
     al_destroy_event_queue(eventQueue);
     al_destroy_display(display);          // usuwanie okna
 
