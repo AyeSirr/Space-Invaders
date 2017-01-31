@@ -10,11 +10,12 @@ struct Statek
 	int score;
 };
 
-
-
-
-
-
+struct Invader1 {
+	int x;
+	int y;
+	int HP;
+	int speed;
+};
 
 
 #endif
