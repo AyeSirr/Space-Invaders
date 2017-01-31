@@ -35,8 +35,11 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="attributes.hpp" />
 		<Unit filename="bitmaps.cpp" />
 		<Unit filename="bitmaps.hpp" />
+		<Unit filename="game.cpp" />
+		<Unit filename="game.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="menu.cpp" />
 		<Unit filename="menu.hpp" />

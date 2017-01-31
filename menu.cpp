@@ -1,5 +1,7 @@
 #include "bitmaps.hpp"
 #include "menu.hpp"
+#include "attributes.hpp"
+#include "game.hpp"
 #include <stdio.h>
 #include <stdlib.h>
 #include <allegro5/allegro.h>
@@ -12,19 +14,19 @@
 #define ScreenW 800
 #define ScreenH 600
 /**
- * Wsp髄rzedne pola rozpoczynajacego gre.
+ * Wsp贸lrzedne pola rozpoczynajacego gre.
  */
-#define start posx < 490 && posx > 315 && posy < 230 && posy > 175
+#define start posx < 495 && posx > 315 && posy < 235 && posy > 175
 /**
- * Wsp髄rzedne pola zamykajacego gre.
+ * Wsp贸lrzedne pola zamykajacego gre.
  */
-#define exitx posx < 420 && posx > 380 && posy < 472 && posy > 435
+#define exitt posx < 425 && posx > 385 && posy < 482 && posy > 425
 /**
- * Wsp髄rzedne pola pokazujacego ranking.
+ * Wsp贸lrzedne pola pokazujacego ranking.
  */
-#define ranking posx < 450 && posx > 350 && posy < 315 && posy > 280
+#define ranking posx < 455 && posx > 355 && posy < 315 && posy > 285
 /**
- * \brief Funkcja zwracajaca na podstawie pozycji kursora wartosc, kt髍a bedzie uzywana do wyboru opcji gry.
+ * \brief Funkcja zwracajaca na podstawie pozycji kursora wartosc, kt贸ra bedzie uzywana do wyboru opcji gry.
  *
  */
 int Option(int posx, int posy)
@@ -33,7 +35,7 @@ int Option(int posx, int posy)
     {
         return 1;
     }
-    if(exitx)
+    if(exitt)
     {
         return 2;
     }
@@ -50,7 +52,7 @@ int Option(int posx, int posy)
 void StartMenu(struct Bitmaps bitmap, ALLEGRO_EVENT_QUEUE *eventQueue, ALLEGRO_DISPLAY *display,  ALLEGRO_TIMER *timer)
 {
     bool check = false;
-    int posx, posy;
+    int posx, posy; // wsp贸艂rz臋dne myszy
 
     while(!check)
     {
@@ -71,8 +73,10 @@ void StartMenu(struct Bitmaps bitmap, ALLEGRO_EVENT_QUEUE *eventQueue, ALLEGRO_D
 		}
 		else if(ev.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN)
 		{
-                if(Option(posx,posy)==1)
+                if(Option(posx,posy)==1){
                     check = true;
+                    GotoGame(bitmap, eventQueue, timer, display);
+                    }
                     if(Option(posx,posy)==2)
                     check = true;
                     if(Option(posx,posy)==3)

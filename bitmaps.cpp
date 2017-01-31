@@ -15,7 +15,9 @@ struct Bitmaps CreateBitmaps(ALLEGRO_DISPLAY *display)
 {
     struct Bitmaps bitmap;
     bitmap.tlo = al_load_bitmap("tlo1.png");
+    bitmap.tlo1 = al_load_bitmap("tlo.png");
     bitmap.crosshair = al_load_bitmap("celownik1.png");
+    bitmap.ship = al_load_bitmap("statek1a.png");
     bitmap.font48b = al_load_font("Amatic-Bold.ttf", 48, 0);
     bitmap.font72b = al_load_font("Amatic-Bold.ttf", 72, 0);
     bitmap.font24b = al_load_font("Amatic-Bold.ttf", 24, 0);

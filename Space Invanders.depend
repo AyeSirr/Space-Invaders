@@ -9,7 +9,7 @@
 	<allegro5/allegro_acodec.h>
 	<time.h>
 
-1483029195 source:c:\users\przemek\documents\github\space-invaders\main.cpp
+1485876674 source:c:\users\przemek\documents\github\space-invaders\main.cpp
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
 	<allegro5/allegro_primitives.h>
@@ -20,10 +20,14 @@
 	<time.h>
 	"menu.hpp"
 	"bitmaps.hpp"
+	"attributes.hpp"
+	"game.hpp"
 
-1483029195 source:c:\users\przemek\documents\github\space-invaders\menu.cpp
+1485877159 source:c:\users\przemek\documents\github\space-invaders\menu.cpp
 	"bitmaps.hpp"
 	"menu.hpp"
+	"attributes.hpp"
+	"game.hpp"
 	<stdio.h>
 	<stdlib.h>
 	<allegro5/allegro.h>
@@ -34,7 +38,7 @@
 	<allegro5/allegro_audio.h>
 	<allegro5/allegro_acodec.h>
 
-1483031645 source:c:\users\przemek\documents\github\space-invaders\bitmaps.cpp
+1485887525 source:c:\users\przemek\documents\github\space-invaders\bitmaps.cpp
 	"bitmaps.hpp"
 	<stdio.h>
 	<allegro5/allegro.h>
@@ -45,7 +49,7 @@
 	<allegro5/allegro_audio.h>
 	<allegro5/allegro_acodec.h>
 
-1483028517 c:\users\przemek\documents\github\space-invaders\bitmaps.hpp
+1485887315 c:\users\przemek\documents\github\space-invaders\bitmaps.hpp
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
 	<allegro5/allegro_primitives.h>
@@ -62,4 +66,36 @@
 	<allegro5/allegro_font.h>
 	<allegro5/allegro_ttf.h>
 	"bitmaps.hpp"
+
+1485887525 source:c:\users\przemek\documents\github\space-invaders\game.cpp
+	"menu.hpp"
+	"attributes.hpp"
+	"bitmaps.hpp"
+	"game.hpp"
+	"attributes.hpp"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<sys/time.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+
+1485886856 c:\users\przemek\documents\github\space-invaders\attributes.hpp
+
+1485876776 c:\users\przemek\documents\github\space-invaders\game.hpp
+	"attributes.hpp"
+	"bitmaps.hpp"
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<stdio.h>
 

@@ -8,6 +8,8 @@
 #include <time.h>
 #include "menu.hpp"
 #include "bitmaps.hpp"
+#include "attributes.hpp"
+#include "game.hpp"
 #define ScreenW 800
 #define ScreenH 600
 /**
