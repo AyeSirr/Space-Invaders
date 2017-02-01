@@ -10,13 +10,19 @@ struct Statek
 	int score;
 };
 
-struct Invader1 {
+struct Invader {
 	int x;
 	int y;
 	int HP;
 	int speed;
 };
+struct Bullets {
+	int x;
+	int y;
+	bool live;
+	int speed;
 
+};
 
 #endif
 
