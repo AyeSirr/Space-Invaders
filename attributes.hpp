@@ -1,25 +1,28 @@
 #ifndef attributes_hpp
 #define attributes_hpp
 
-struct Statek
+class Statek
 {
+    public:
 	int x;
 	int y;
 	int lives;
 	int speed;
 	int score;
 };
-
-struct Invader {
+class Invader {
+    public:
 	int x;
 	int y;
 	int HP;
+	bool life;
 	int speed;
 };
-struct Bullets {
+class Bullets {
+    public:
 	int x;
 	int y;
-	bool live;
+	bool life;
 	int speed;
 
 };

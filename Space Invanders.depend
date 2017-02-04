@@ -67,7 +67,7 @@
 	<allegro5/allegro_ttf.h>
 	"bitmaps.hpp"
 
-1485912389 source:c:\users\przemek\documents\github\space-invaders\game.cpp
+1486222164 source:c:\users\przemek\documents\github\space-invaders\game.cpp
 	"menu.hpp"
 	"attributes.hpp"
 	"bitmaps.hpp"
@@ -85,7 +85,7 @@
 	<allegro5/allegro_audio.h>
 	<allegro5/allegro_acodec.h>
 
-1485895302 c:\users\przemek\documents\github\space-invaders\attributes.hpp
+1486159663 c:\users\przemek\documents\github\space-invaders\attributes.hpp
 
 1485876776 c:\users\przemek\documents\github\space-invaders\game.hpp
 	"attributes.hpp"
