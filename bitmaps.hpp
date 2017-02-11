@@ -10,7 +10,7 @@
 #include <stdio.h>
 
 /**
- * \brief Struktura przechowujaca pliki audio, bitmapy i czcionki gry.
+ * @brief Struktura przechowujaca bitmapy i czcionki gry.
  *
  */
 struct Bitmaps
@@ -23,6 +23,8 @@ struct Bitmaps
     ALLEGRO_BITMAP *invader3;
     ALLEGRO_BITMAP *invader4;
     ALLEGRO_BITMAP *ship;
+    ALLEGRO_BITMAP *gameover;
+    ALLEGRO_BITMAP *wygrana;
     ALLEGRO_FONT *font72b;
     ALLEGRO_FONT *font48b;
     ALLEGRO_FONT *font24b;

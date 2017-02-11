@@ -13,8 +13,9 @@
 #define ScreenW 800
 #define ScreenH 600
 /**
- * \brief Funkcja uruchamiajaca program.
- * \brief Funkcja zawiera inicjacje biblioteki allegro - czcionki, audio, bitmapy, timer, itp.
+ * @brief Funkcja uruchamiajaca program.
+ * @brief Funkcja zawiera inicjacje biblioteki allegro - czcionki, audio, bitmapy, timer, itp.
+ * @brief Funkcja przechodzi do funkcji uruchamiajaca menu gry.
  */
 int main()
 {

@@ -21,12 +21,9 @@
  * Wspólrzedne pola zamykajacego gre.
  */
 #define exitt posx < 425 && posx > 385 && posy < 482 && posy > 425
+
 /**
- * Wspólrzedne pola pokazujacego ranking.
- */
-#define ranking posx < 455 && posx > 355 && posy < 315 && posy > 285
-/**
- * \brief Funkcja zwracajaca na podstawie pozycji kursora wartosc, która bedzie uzywana do wyboru opcji gry.
+ * @brief Funkcja zwracajaca na podstawie pozycji kursora wartosc, która bedzie uzywana do wyboru opcji gry.
  *
  */
 int Option(int posx, int posy)
@@ -39,14 +36,10 @@ int Option(int posx, int posy)
     {
         return 2;
     }
-    if(ranking)
-    {
-        return 3;
-    }
 }
 
 /**
- * \brief Funkcja uruchamiajaca menu gry.
+ * @brief Funkcja uruchamiajaca menu gry.
  *
  */
 void StartMenu(struct Bitmaps bitmap, ALLEGRO_EVENT_QUEUE *eventQueue, ALLEGRO_DISPLAY *display,  ALLEGRO_TIMER *timer)
@@ -60,7 +53,6 @@ void StartMenu(struct Bitmaps bitmap, ALLEGRO_EVENT_QUEUE *eventQueue, ALLEGRO_D
         al_wait_for_event(eventQueue, &ev);
         al_draw_bitmap(bitmap.tlo, 0, 0, 0);
         al_draw_text(bitmap.font72b, al_map_rgb(150,100,0), ScreenW/2, ScreenH/4.5, ALLEGRO_ALIGN_CENTER, "NEW GAME");
-        al_draw_text(bitmap.font48b, al_map_rgb(150,100,0), ScreenW/2, ScreenH/2.2, ALLEGRO_ALIGN_CENTER, "RANKING");
         al_draw_text(bitmap.font48b, al_map_rgb(150,100,0), ScreenW/2, ScreenH/1.4, ALLEGRO_ALIGN_CENTER, "END");
 		if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
 		{
@@ -79,10 +71,6 @@ void StartMenu(struct Bitmaps bitmap, ALLEGRO_EVENT_QUEUE *eventQueue, ALLEGRO_D
                     }
                     if(Option(posx,posy)==2)
                     check = true;
-                    if(Option(posx,posy)==3)
-                   check = true;
-
-
 		}
         al_draw_bitmap(bitmap.crosshair, posx-20,posy-20,0);
             al_flip_display();

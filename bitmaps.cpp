@@ -8,7 +8,7 @@
 #include <allegro5/allegro_audio.h>
 #include <allegro5/allegro_acodec.h>
 /**
- * \brief Funkcja tworzaca strukture "bitmap", w której sa zapisane wszystkie bitmapy, pliki audio i czcionki potrzebne do uruchomienia gry.
+ * @brief Funkcja tworzaca strukture "bitmap", w której sa zapisane wszystkie bitmapy i czcionki potrzebne do uruchomienia gry.
  *
  */
 struct Bitmaps CreateBitmaps(ALLEGRO_DISPLAY *display)
@@ -22,6 +22,8 @@ struct Bitmaps CreateBitmaps(ALLEGRO_DISPLAY *display)
     bitmap.invader2 = al_load_bitmap("invader2.png");
     bitmap.invader3 = al_load_bitmap("invader3.png");
     bitmap.invader4 = al_load_bitmap("invader4.png");
+    bitmap.gameover = al_load_bitmap("gameover.png");
+    bitmap.wygrana = al_load_bitmap("wygrana.png");
     bitmap.font48b = al_load_font("Amatic-Bold.ttf", 48, 0);
     bitmap.font72b = al_load_font("Amatic-Bold.ttf", 72, 0);
     bitmap.font24b = al_load_font("Amatic-Bold.ttf", 24, 0);
